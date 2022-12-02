@@ -1,0 +1,172 @@
+body {
+	background-color: rgb(240, 255, 240);
+}
+
+.quadrado {
+	border: 2px inset rgb(0, 0, 0);
+	width: 150px;
+	height: 150px;
+	padding-top: 10px;
+}
+
+.texto {
+	text-align: center;
+	font-size: 20px;
+	color: rgb(25, 25, 112);
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+
+/* Quadrados coloridos: 30px */
+
+.q1, .q2, .q3, .q4 {
+	margin-top: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.q1, .q5 {
+	border: solid 5px;
+	border-color: rgb(0, 0, 0) rgb(216, 191, 216) rgb(255, 255, 0) rgb(255, 0, 0);
+}
+
+.q2, .q6 {
+	border: solid 10px;
+	border-color: rgb(255, 20, 147) rgb(75, 0, 130) rgb(244, 164, 96) rgb(0, 255, 0);
+}
+
+.q3, .q7 {
+	border: solid 25px;
+	border-color: rgb(0, 250, 154) rgb(70, 130, 180) rgb(189, 83, 107) rgb(255, 192, 203);
+}
+
+.q4, .q8 {
+	border: solid 50px;
+	border-color: rgb(255, 127, 80) rgb(176, 224, 230) rgb(0, 0, 255) rgb(79, 79, 79);
+}
+
+/* Quadrados coloridos: 0px */
+
+.q5, .q6, .q7, .q8, .q9, .q10, .q11, .q12, .q13, .q14, .q15, .q16 {
+	margin-top: 10px;
+	width: 0px;
+	height: 0px;
+}
+
+/* Mesma cor em bordas adjacentes */
+.q9, .q10, .q11, .q12, .q13 {
+	line-height: 0;
+	border: 50px solid;
+}
+
+
+.q9 {
+	border-color: rgb(255, 255, 0) rgb(255, 255, 0) rgb(176, 224, 230) rgb(255, 127, 80);
+}
+
+.q10 {
+	border-color: rgb(0, 0, 0) rgb(255, 255, 0) rgb(255, 255, 0) rgb(79, 79, 79);
+}
+
+.q11 {
+	border-color: rgb(0, 191, 255) rgb(173, 255, 47) rgb(128 ,0, 128) rgb(128,0,128);
+}
+
+.q12 {
+	border-color: rgb(220, 20, 60) rgb(216, 191, 216) rgb(0, 0, 0) rgb(220, 20, 60);
+}
+
+.q13, .q14, .q15, .q16  {
+	border-color: rgb(0, 128, 0) rgb(0, 0, 255) rgb(255, 0, 0) rgb(255, 255, 0);
+	border-style: solid;
+}
+
+.q14 {
+ 	border-width: 30px 50px 70px;
+ }
+
+.q15 {
+ 	border-width: 10px 50px 90px;
+}
+
+.q16 {
+ 	border-width: 0px 50px 100px;
+}
+
+/* Formas trapezoidais */
+
+.q17, .q18, .q19, .q20 {
+	line-height:0;
+ 	width:30px;
+ 	height:0;
+ 	border-style: solid;
+ 	border-color: rgb(0, 128, 0) rgb(0, 0, 255) rgb(255, 0, 0) rgb(255, 255, 0);
+}
+
+.q17 {
+	border-width: 50px 35px;
+}
+
+.q18 {
+	border-width: 30px 35px 70px;
+} 
+
+.q19 {
+	border-width: 10px 35px 90px;
+}
+
+.q20 {
+	border-width: 0px 35px 100px;
+}
+
+/* Combinando espessuras diferentes com uma altura fixa */
+
+.q21, .q22, .q23, .q24 {
+	line-height:0;
+	width:0;
+	height:30px;
+	border-style: solid;
+	border-color: rgb(0, 128, 0) rgb(0, 0, 255) rgb(255, 0, 0) rgb(255, 255, 0);
+}
+
+.q21 {
+	border-width: 35px 50px;
+}
+
+.q22 {
+	border-width: 30px 50px 40px;
+}
+
+.q23 {
+	border-width: 10px 50px 60px;
+ }
+
+ .q24 {
+ 	border-width: 0px 50px 70px;
+ }
+
+ /* As quatro bordas com espessuras diferentes */
+
+ .q25, .q26 {
+	 line-height:0;
+	 width:0;
+	 height:0;
+	 border-style: solid;
+	 border-color: #f00 #0f0 #00f #fc0; /* Trocar para rgb */
+}
+
+.q25 {
+	border-width: 0 160px 100px 50px;
+}
+
+.q26 {
+	border-width: 20px 0px 80px 190px;
+}
